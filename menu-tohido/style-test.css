@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #000000;
+}
+h1 {
+  text-align: center;
+  color: rgb(199, 12, 49);
+}
+
+h3 {
+  color: #af2e2e;
+}
+
+/* Centering the logo in the header */
+header {
+  display: flex;
+  justify-content: center; /* Horizontally center the logo */
+  align-items: center; /* Vertically center the logo */
+  padding: 20px 0;
+  background-color: white; /* Optional background for header */
+}
+
+.logo {
+  max-width: 100%; /* Makes the logo responsive */
+  height: auto;
+  max-height: 200px; /* Adjust the max height if necessary */
+}
+
+.category {
+  margin-bottom: 40px; /* Space between sections */
+  text-align: center;
+  padding: 20px;
+  background-color: #af2e2e; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the category title */
+.category h2 {
+  font-size: 28px;
+  color: #ffffff; /* Dark teal color */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the formula text */
+.category .formula {
+  font-size: 16px;
+  color: #fffdfd;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Container flexbox for the menu items */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the items */
+}
+
+/* Each menu item box */
+.menu-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row, adapts when window size changes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center; /* Centering text and image */
+}
+
+.menu-item img {
+  width: 100px; /* Smaller width */
+  height: auto; /* Auto height to maintain aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #af2e2e;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-item {
+    flex: 1 1 100%; /* 1 item per row on small screens */
+  }
+}
